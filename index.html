@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raa Only</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        html { scroll-behavior: smooth; }
+        body { background: #ffffff; color: #111111; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        .header { text-align: center; padding: 30px 0 20px; }
+        .logo img { width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 5px solid #111111; box-shadow: 0 0 20px rgba(0,0,0,0.15); }
+        .menu { margin-top: 20px; background: #f5f5f5; border: 1px solid #e5e5e5; border-radius: 15px; padding: 5px; }
+        .menu ul { list-style: none; display: flex; justify-content: center; }
+        .menu ul li { display: inline-block; position: relative; }
+        .menu ul li a { display: block; padding: 12px 25px; color: #111111; text-decoration: none; font-weight: 600; transition: 0.3s; border-radius: 10px; }
+        .menu ul li a:hover { background: #111111; color: #fff; }
+        
+        
+        ul.submenu { display: none; position: absolute; top: 100%; left: 0; background: #ffffff; min-width: 180px; border-radius: 10px; border: 1px solid #e5e5e5; overflow: hidden; z-index: 10; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .menu ul li:hover .submenu { display: block; }
+        .submenu li a { color: #111111 !important; padding: 12px 20px; text-align: left; }
+        .submenu li a:hover { background: #111111 !important; color: #fff !important; border-radius: 0 !important; }
+
+        .jumbotron { margin-top: 25px; padding: 90px 30px; text-align: center; color: white; border-radius: 20px; border: 1px solid #111111; background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('bc.webp'); background-size: cover; background-position: center; }
+        .jumbotron h2 { font-size: 34px; margin-bottom: 12px; color: #fff; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); }
+        .jumbotron p { line-height: 1.6; color: #eee; font-size: 17px; max-width: 700px; margin: 0 auto; }
+
+        .content { margin: 30px 0; text-align: center; }
+        .content > h2 { font-size: 26px; margin-bottom: 20px; color: #111111; }
+        .product-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .thumbnail { background: #ffffff; border: 1px solid #e5e5e5; width: 260px; padding: 15px; border-radius: 15px; transition: 0.3s; }
+        .thumbnail:hover { transform: translateY(-5px); border-color: #111111; box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+        .thumbnail img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
+        .thumbnail h2 { margin: 12px 0 5px; font-size: 18px; color: #111111; }
+        .thumbnail p { color: #111111; font-weight: bold; font-size: 18px; }
+        .footer { background: #f5f5f5; color: #666; padding: 20px; text-align: center; border-top: 2px solid #111111; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="logo gw.jpg" alt="Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a>
+                        <ul class="submenu">
+                            <li><a href="#cv">CV</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#portofolio">Portofolio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jumbotron" id="home">
+            <h2>Welcome to My Homepage</h2>
+            <p>Selamat datang di Raa Only. Koleksi hodie hitam elegan terbaik.</p>
+        </div>
+
+        <div class="content" id="about">
+            <h2>Hodie Collection</h2>
+            <div class="product-grid">
+                <div class="thumbnail">
+                    <img src="hody putih.jpg" alt="Hodie Putih">
+                    <h2>Hodie Putih</h2>
+                    <p>Rp 155.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="hody 2.jpg" alt="Hodie Hitam">
+                    <h2>Hodie Hitam</h2>
+                    <p>Rp 170.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="hody abu.jpg" alt="Hodie Abu">
+                    <h2>Hodie Abu</h2>
+                    <p>Rp 127.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" id="contact">
+            <p>copyright 2018 My Page - Contact: raaonly@email.com</p>
+        </div>
+    </div>
+
+</body>
+</html>
